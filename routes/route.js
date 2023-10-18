@@ -14,5 +14,6 @@ router.post('/createBlog', blogController.createBlog);
 //router.delete('/deleteblog/:blogId', deleteController.deleteBlog);
 //router.delete('/deleteblog', deleteController.deleteBlog);
 router.put('/updateBlog/:blogId', updateController.updateBlog); 
+router.put('/updateBlog/:authorId', updateController.updateBlog);
 //router.put('/updateBlog', updateController.updateBlog);
 module.exports = router; 

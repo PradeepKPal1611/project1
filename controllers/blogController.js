@@ -20,9 +20,6 @@ const createBlog = async function (req, res) {
       if (!data.category) {
         return res.status(400).send({ status: false, msg: "Blog Category is required" });
       }
-      if (!data.category) {
-        return res.status(400).send({ status: false, msg: "Blog Category is required" });
-      }
      
       const createBlog = await blogModel.create(data);
       res
